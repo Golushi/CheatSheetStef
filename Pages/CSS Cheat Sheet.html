@@ -1,0 +1,302 @@
+<!--CSS Cheat Sheet-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Cheat Sheet</title>
+</head>
+<body>
+    <header id="haut-de-page">
+        <h1 class="page-css">CSS Cheat Sheet</h1>
+        <p class="intro">Ici, on peut retrouver toutes les infos utiles pour coder du CSS</p>
+        <div>
+            <a href="../Cheat sheet page d'accueil.html">Retour page d'accueil</a>
+            <a href="HTML Cheat Sheet.html" class="myButton-HTML">Vers le HTML</a>
+            <a href="JS Cheat Sheet.html" class="myButton-JS">Vers le JS</a>
+        </div>
+        <br />
+        <hr />
+        <nav>
+            <h2>Sommaire</h2>
+                <ul>
+                    <li><a href="#Basiques">Basiques</a></li>
+                    <li><a href="#Sélecteurs">Sélecteurs</a></li>
+                    <li><a href="#Propriétés">Propriétés</a></li>
+                </ul>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <h2>Basiques</h2>
+        <div class="flex-container-main">
+            <div class="flex-container3">
+                <article>
+                    <h3>Style interne</h3>
+                        <pre style="color:#000">&lt;<span style="font-weight:700">style</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span>>
+                        <pre><span style="font-weight:700">p</span> { <span style="color:#6d79de;font-weight:700">color</span>: <span style="color:#c5060b;font-style:italic">#444</span>;}
+                        <pre>&lt;/<span style="font-weight:700">style</span>>
+                        </pre></pre></pre>
+                </article>
+                <article>
+                    <h3>Commentaires</h3>
+                        <pre style="color:#000"><span style="color:#00b418">/* Ceci est un commentaire */</span>
+                        </pre>
+                </article>
+                <article>
+                    <h3>Importer un fichier css dans une page html</h3>
+                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span> <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"/style.css"</span> /></span>
+                        </pre>
+                </article>
+            </div>
+        <div class="flex-container5">
+        <hr />
+        <div class="flex-container5-1">
+        <h2 id="Sélecteurs">Sélecteurs</h2>
+            <article>
+                <div><span>* </span><em>all elements</em></div>
+                <div><span>div </span><em>all div tags </em></div>
+                <div><span>div,p </span><em>all divs and paragraphs </em></div>
+                <div><span>div p </span><em>paragraphs inside divs </em></div>
+                <div><span>div > p </span><em>all p tags, one level deep in div</em></div>
+                <div><span>div + p </span><em>p tags immediately after div</em></div>
+                <div><span>div ~ p </span><em>p tags preceded by div</em></div>
+                <div><span>.classname </span><em>all elements with class </em></div>
+                <div><span>#idname </span><em>element with ID </em></div>
+                <div><span>div.classname </span><em>divs with certain classname</em></div>
+                <div><span>div#idname </span><em>div with certain ID </em></div>
+                <div><span>#idname * </span><em>all elements inside #idname</em></div>
+            <h3>Pseudo classes</h3>  
+                <div><span>a:link </span><em>link in normal state</em></div>
+                <div><span>a:active </span><em>link in clicked state</em></div>
+                <div><span>a:hover </span><em>link with mouse over it</em></div>
+                <div><span>a:visited </span><em>visited link</em></div>	
+                <div><span>p::after{content:"yo";}</span><em>add content after p </em></div>
+                <div><span>p::before </span><em>add content before p </em></div>
+                <div><span>input:checked </span><em>checked inputs </em></div>
+                <div><span>input:disabled </span><em>disabled inputs </em></div>
+                <div><span>input:enabled </span><em>enabled inputs </em></div>
+                <div><span>input:focus </span><em>input has focus </em></div>
+                <div><span>input:in-range </span><em>value in range </em></div>
+                <div><span>input:out-of-range </span><em>input value out of range </em></div>
+                <div><span>input:valid </span><em>input with valid value </em></div>
+                <div><span>input:invalid </span><em>input with invalid value </em></div>
+                <div><span>input:optional </span><em>no required attribute </em></div>
+                <div><span>input:required </span><em>input with requred attribute </em></div>
+                <div><span>input:read-only </span><em>with readonly attribute </em></div>
+                <div><span>input:read-write </span><em>no readonly attrib. </em></div>
+                <div><span>div:empty </span><em>element with no children </em></div>
+                <div><span>p::first-letter </span><em>first letter in p </em></div>
+                <div><span>p::first-line </span><em>first line in p </em></div>
+                <div><span>p:first-of-type </span><em>first of some type </em></div>
+                <div><span>p:last-of-type </span><em>last of some type </em></div>
+                <div><span>p:lang(en) </span><em>p with en language attribute </em></div>
+                <div><span>:not(span) </span><em>element that's not a span </em></div>
+                <div><span>p:first-child </span><em>first child of its parent </em></div>
+                <div><span>p:last-child </span><em>last child of its parent </em></div>
+                <div><span>p:nth-child(2) </span><em>second child of its parent </em></div>
+                <div><span>p:nth-child(3n+1) </span><em>nth-child (an + b) formula</em></div>
+                <div><span>p:nth-last-child(2) </span><em>second child from behind </em></div>
+                <div><span>p:nth-of-type(2) </span><em>second p of its parent </em></div>
+                <div><span>p:nth-last-of-type(2) </span><em>...from behind </em></div>
+                <div><span>p:only-of-type </span><em>unique of its parent</em></div>
+                <div><span>p:only-child </span><em>only child of its parent</em></div>
+                <div><span>:root </span><em>documents root element </em></div>
+                <div><span>::selection </span><em>portion selected by user </em></div>
+                <div><span>:target </span><em>highlight active anchor </em></div>
+            </article>
+        </div>
+        <hr />
+        <div class="flex-container5-2">
+        <h2 id="Propriétés">Propriétés</h2>
+            <article>
+                <div><span>align-content</span><em>behavior of the flex-wrap property </em></div>
+                <div><span>align-items</span><em>alignment for items inside the container </em></div>
+                <div><span>align-self</span><em>alignment for the selected item </em></div>
+                <div><span>all</span><em>changes all properties </em></div>
+                <div><span>animation</span><em>binds an animation to an element </em></div>
+                <div><span>animation-delay</span><em>delays animation start </em></div>
+                <div><span>animation-direction</span><em>reverse animation or in alternate cycles </em></div>
+                <div><span>animation-duration</span><em>animation duration in seconds or ms </em></div>
+                <div><span>animation-fill-mode</span><em>style when the animation is not playing  </em></div>
+                <div><span>animation-iteration-count</span><em>number of an animation replays </em></div>
+                <div><span>animation-name</span><em>name for the @keyframes animation </em></div>
+                <div><span>animation-play-state</span><em>the animation is running or paused </em></div>
+                <div><span>animation-timing-function</span><em>speed curve of an animation </em></div>
+                <div><span>backface-visibility</span><em>is element visible when not facing the screen </em></div>
+                <div><span>background</span><em>all background properties in one declaration </em></div>
+                <div><span>background-attachment</span><em>is the background image fixed or scrolls</em></div>
+                <div><span>background-blend-mode</span><em>blending mode of each background layer </em></div>
+                <div><span>background-clip</span><em>painting area of the background </em></div>
+                <div><span>background-color</span><em>background color </em></div>
+                <div><span>background-image</span><em>background image </em></div>
+                <div><span>background-origin</span><em>where the background image is positioned </em></div>
+                <div><span>background-position</span><em>starting position of the background image </em></div>
+                <div><span>background-repeat</span><em>the way the background image is repeated </em></div>
+                <div><span>background-size</span><em>background image size </em></div>
+                <div><span>border</span><em>sets all border properties in one line </em></div>
+                <div><span>border-bottom</span><em>bottom border properties in one line </em></div>
+                <div><span>border-bottom-color</span><em>color of the bottom border</em></div>
+                <div><span>border-bottom-left-radius</span><em>border bottom left radius </em></div>
+                <div><span>border-bottom-right-radius</span><em>border bottom right radius </em></div>
+                <div><span>border-bottom-style</span><em>border bottom style </em></div>
+                <div><span>border-bottom-width</span><em>border bottom width</em></div>
+                <div><span>border-collapse</span><em>border collapse</em></div>
+                <div><span>border-color</span><em>border color </em></div>
+                <div><span>border-image</span><em>sets an image as border</em></div>
+                <div><span>border-image-outset</span><em>border image area extends beyond the border box </em></div>
+                <div><span>border-image-repeat</span><em>border image repeated, rounded or stretched</em></div>
+                <div><span>border-image-slice</span><em>how to slice the border image </em></div>
+                <div><span>border-image-source</span><em>path to the border image </em></div>
+                <div><span>border-image-width</span><em>border image width </em></div>
+                <div><span>border-left</span><em>left border properties in one line </em></div>
+                <div><span>border-left-color</span><em>border left color </em></div>
+                <div><span>border-left-style</span><em>border left style </em></div>
+                <div><span>border-left-width</span><em>border left width </em></div>
+                <div><span>border-radius</span><em>border radius of the four rounded corners</em></div>
+                <div><span>border-right</span><em>right border properties in one line </em></div>
+                <div><span>border-right-color</span><em>border right color </em></div>
+                <div><span>border-right-style</span><em>border right style </em></div>
+                <div><span>border-right-width</span><em>border right width </em></div>
+                <div><span>border-spacing</span><em>border spacing </em></div>
+                <div><span>border-style</span><em>border style </em></div>
+                <div><span>border-top</span><em>top border properties in one line </em></div>
+                <div><span>border-top-color</span><em>border top color </em></div>
+                <div><span>border-top-left-radius</span><em>border top left radius </em></div>
+                <div><span>border-top-right-radius</span><em>border top right radius </em></div>
+                <div><span>border-top-style</span><em>border top style </em></div>
+                <div><span>border-top-width</span><em>border top width </em></div>
+                <div><span>border-width</span><em>border width </em></div>
+                <div><span>bottom</span><em>bottom offset for relative and absolute elements </em></div>
+                <div><span>box-shadow</span><em>shadow to element </em></div>
+                <div><span>box-sizing</span><em>box sizing properties</em></div>
+                <div><span>caption-side</span><em>placement of a table caption </em></div>
+                <div><span>clear</span><em>deny floating of an element </em></div>
+                <div><span>clip</span><em>clip an absolutely positioned element </em></div>
+                <div><span>color</span><em>text color</em></div>
+                <div><span>column-count</span><em>divide the content in columns</em></div>
+                <div><span>column-fill</span><em>balanced fill or not </em></div>
+                <div><span>column-gap</span><em>gap between the columns </em></div>
+                <div><span>column-rule</span><em>separator between columns, like border </em></div>
+                <div><span>column-rule-color</span><em>column rule color </em></div>
+                <div><span>column-rule-style</span><em>column rule style </em></div>
+                <div><span>column-rule-width</span><em>column rule width </em></div>
+                <div><span>column-span</span><em> column span</em></div>
+                <div><span>column-width</span><em>column width </em></div>
+                <div><span>columns</span><em>set column-width and column-count </em></div>
+                <div><span>content</span><em>insert content :before and :after elements </em></div>
+                <div><span>counter-increment</span><em>count sections </em></div>
+                <div><span>counter-reset</span><em>reset counter </em></div>
+                <div><span>cursor</span><em>cursor type when element is hovered </em></div>
+                <div><span>direction</span><em>writing direction, Arabic is using rtl </em></div>
+                <div><span>display</span><em>box display type </em></div>
+                <div><span>empty-cells</span><em>hide borders and background on empty table cells </em></div>
+                <div><span>filter</span><em>image effects: grayscale, blur, invert etc. </em></div>
+                <div><span>flex</span><em>item length, relative to others inside the container </em></div>
+                <div><span>flex-basis</span><em>initial length of a flexible item </em></div>
+                <div><span>flex-direction</span><em>direction of the flexible items </em></div>
+                <div><span>flex-flow</span><em>shorthand for flex-direction and flex-wrap  </em></div>
+                <div><span>flex-grow</span><em>how much the item will grow relative other items </em></div>
+                <div><span>flex-shrink</span><em>how to shrink the item relative to other items </em></div>
+                <div><span>flex-wrap</span><em>wrap flexible items </em></div>
+                <div><span>float</span><em>float elements left or right </em></div>
+                <div><span>font</span><em>all font properties in one line </em></div>
+                <div><span>@font-face</span><em>declare non-web-safe fonts</em></div>
+                <div><span>font-family</span><em>font of the element </em></div>
+                <div><span>font-size</span><em>font size </em></div>
+                <div><span>font-size-adjust</span><em>control font size if the first declared option is not available </em></div>
+                <div><span>font-stretch</span><em>widen or narrow text </em></div>
+                <div><span>font-style</span><em>font style: normal, italic, oblique </em></div>
+                <div><span>font-variant</span><em>set small-caps </em></div>
+                <div><span>font-weight</span><em>use bold or thin characters </em></div>
+                <div><span>hanging-punctuation</span><em>can a punctuation mark be placed outside the line box?  </em></div>
+                <div><span>height</span><em>height of the element </em></div>
+                <div><span>justify-content</span><em>justifies flexible container's items horizontally if necessary  </em></div>
+                <div><span>@keyframes</span><em>specifies the animation code </em></div>
+                <div><span>left</span><em>left offset for relative and absolute elements </em></div>
+                <div><span>letter-spacing</span><em>space between characters  </em></div>
+                <div><span>line-height</span><em>line height of text or inline-block elements</em></div>
+                <div><span>list-style</span><em>all list properties in one line </em></div>
+                <div><span>list-style-image</span><em>replace the list item marker with an image </em></div>
+                <div><span>list-style-position</span><em>list item markers inside or outside the content flow </em></div>
+                <div><span>list-style-type</span><em>set the type of the list item marker </em></div>
+                <div><span>margin</span><em>set the top, right, bottom and left margins in one line </em></div>
+                <div><span>margin-bottom</span><em>bottom margin </em></div>
+                <div><span>margin-left</span><em>left margin </em></div>
+                <div><span>margin-right</span><em>right margin </em></div>
+                <div><span>margin-top</span><em>margin top </em></div>
+                <div><span>max-height</span><em>maximum height of element </em></div>
+                <div><span>max-width</span><em>maximum width of element </em></div>
+                <div><span>@media</span><em>see media queries </em></div>
+                <div><span>min-height</span><em>minimum height </em></div>
+                <div><span>min-width</span><em>minimum width </em></div>
+                <div><span>nav-down</span><em>where to navigate when the the arrow-down button is pressed </em></div>
+                <div><span>nav-index</span><em>sets sequential navigation order  </em></div>
+                <div><span>nav-left</span><em>where to navigate when the the arrow-left button is pressed </em></div>
+                <div><span>nav-right</span><em>where to navigate when the the arrow-right button is pressed </em></div>
+                <div><span>nav-up</span><em>where to navigate when the the arrow-up button is pressed </em></div>
+                <div><span>opacity</span><em>transparency level of an element </em></div>
+                <div><span>order</span><em>reorder elements in a container </em></div>
+                <div><span>outline</span><em>drow an outer border around elements </em></div>
+                <div><span>outline-color</span><em>outline color </em></div>
+                <div><span>outline-offset</span><em>gap between the element and the outline </em></div>
+                <div><span>outline-style</span><em>outline style </em></div>
+                <div><span>outline-width</span><em>outline width </em></div>
+                <div><span>overflow</span><em>hide, display or scroll if the content overflows its container  </em></div>
+                <div><span>overflow-x</span><em>horizontal overflow </em></div>
+                <div><span>overflow-y</span><em>vertical overflow </em></div>
+                <div><span>padding</span><em>padding between the element border and content</em></div>
+                <div><span>padding-bottom</span><em>padding bottom </em></div>
+                <div><span>padding-left</span><em>padding left </em></div>
+                <div><span>padding-right</span><em>padding right </em></div>
+                <div><span>padding-top</span><em>padding top </em></div>
+                <div><span>page-break-after</span><em>adds page break after an element </em></div>
+                <div><span>page-break-before</span><em>adds page break before an element </em></div>
+                <div><span>page-break-inside</span><em>allow page break inside an element </em></div>
+                <div><span>perspective</span><em>how many pixels the 3D element is placed from the view </em></div>
+                <div><span>perspective-origin</span><em>where is the 3D element based in the x- and y-axis </em></div>
+                <div><span>position</span><em>positioning type: absolute, fixed, relative, static</em></div>
+                <div><span>quotes</span><em>set quotation marks to wrap an element </em></div>
+                <div><span>resize</span><em>declare resizable elements </em></div>
+                <div><span>right</span><em>right offset for relative and absolute elements </em></div>
+                <div><span>tab-size</span><em>tab character space length </em></div>
+                <div><span>table-layout</span><em>table layout algorithm </em></div>
+                <div><span>text-align</span><em>horizontal alignment of text </em></div>
+                <div><span>text-align-last</span><em>horizontal alignment of last line of text </em></div>
+                <div><span>text-decoration</span><em>overline, underline or line-through the text </em></div>
+                <div><span>text-indent</span><em>indentation of the first line of the text </em></div>
+                <div><span>text-overflow</span><em>the way how overflowed content is marked (ellipsis) </em></div>
+                <div><span>text-shadow</span><em>text shadow </em></div>
+                <div><span>text-transform</span><em>capitalization of text </em></div>
+                <div><span>top</span><em>top offset for relative and absolute elements </em></div>
+                <div><span>transform</span><em>2D 3D transformation. See widget. </em></div>
+                <div><span>transform-origin</span><em>changes the position of transformed elements </em></div>
+                <div><span>transform-style</span><em>render nested elements in 3D </em></div>
+                <div><span>transition</span><em>transition properties in one line </em></div>
+                <div><span>transition-delay</span><em>delay before transition effect start </em></div>
+                <div><span>transition-duration</span><em>transition effect duration </em></div>
+                <div><span>transition-property</span><em>which CSS property is the transition affecting </em></div>
+                <div><span>transition-timing-function</span><em>speed curve of the transition </em></div>
+                <div><span>unicode-bidi</span><em>should the text be overridden to support more languages </em></div>
+                <div><span>user-select</span><em>disable user content selection </em></div>
+                <div><span>vertical-align</span><em>vertical alignment </em></div>
+                <div><span>visibility</span><em>visibility:hidden elements leave a gap  </em></div>
+                <div><span>white-space</span><em>how are white-spaces handled </em></div>
+                <div><span>width</span><em>width of an element </em></div>
+                <div><span>word-break</span><em>text breaking rules when text reaches the end of the container </em></div>
+                <div><span>word-spacing</span><em>size of white space between words </em></div>
+                <div><span>word-wrap</span><em>break long words and wrap onto the next line </em></div>
+                <div><span>z-index</span><em>stack order of the element </em></div>
+            </article>
+        </div>
+        </div>
+        </div>
+    </main>            
+    <footer>
+        <p>copyright by Stef</p>
+        <a href="#haut-de-page">&#8593;</a>
+    </footer>
+</body>
+</html>

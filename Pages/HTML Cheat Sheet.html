@@ -1,0 +1,445 @@
+<!--HTML Cheat Sheet-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Cheat Sheet</title>
+</head>
+<body>
+<header id="haut-de-page">
+    <h1 class="page-html">HTML Cheat Sheet</h1>
+        <p class="intro">Ici, on peut retrouver toutes les infos utiles pour coder du HTML</p>
+        <div>
+            <a href= "../Cheat sheet page d'accueil.html">Retour page d'accueil</a>
+            <a href="CSS Cheat Sheet.html" class="myButton-CSS">Vers le CSS</a>
+            <a href="JS Cheat Sheet.html" class="myButton-JS">Vers le JS</a>
+        </div>
+    <br />
+    <hr />
+    <nav>
+        <h2>Sommaire</h2>
+            <ul>
+                <li><a href="#liens-hypertexte">Liens hypertextes</a></li>
+                <li><a href="#Structure">Structure</a></li>
+                <li><a href="#Attributs">Attributs</a></li>
+            </ul>
+    </nav>
+</header>
+<hr />
+<main>   
+    <h2>Balises</h2>
+    <div class="flex-container-main">
+    <div class="flex-container">
+        <article class="item1">
+            <h3>Paragraphe</h3>
+                <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>p</span>></span>Paragraphe<span style="color:#1c02ff">&lt;/<span>p</span>></span>
+                </pre>
+                <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>p</span> <span>style</span>=<span style="color:#d80800">"text-align: center;"</span>></span>text<span style="color:#1c02ff">&lt;/<span>p</span>></span>
+                </pre>
+        </article>
+        <article class="item1">
+            <h3>Retour à la ligne</h3>
+                <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>br</span> /></span>
+                </pre>
+        </article>
+        <article  class="item1">
+            <h3>Ligne horizontale</h3>
+                <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>hr</span> /></span>
+                </pre>
+        </article>
+        <article>
+            <h3>Commentaires</h3>
+                <pre style="color:#000"><span style="color:#00b418">&lt;!-- HTML Comment --></span>
+                </pre>
+        </article>
+    </div>
+    <div class="flex-container2">
+        <article  class="item4">
+            <h3>Conteneurs génériques</h3>
+                <pre><span style="color:#1c02ff">&lt;<span>span</span>></span>ConteneurLigne<span style="color:#1c02ff">&lt;/<span>span</span>></span>
+                </pre>
+                <pre><span style="color:#1c02ff">&lt;<span>div</span>></span>ConteneurBloc<span style="color:#1c02ff">&lt;/<span>div</span>></span>
+                </pre>
+        </article>
+        <article>
+            <h3>Titres</h3>
+                <ol>
+                    <li><pre><span style="color:#1c02ff">&lt;<span>h</span>1></span>Titre principal<span style="color:#1c02ff">&lt;/<span>h</span>1></span>
+                    </pre></li>
+                    <li><pre><span style="color:#1c02ff">&lt;<span>h</span>2></span>Titre important<span style="color:#1c02ff">&lt;/<span >h</span>2></span>
+                    </pre></li>
+                    <li><pre><span style="color:#1c02ff">&lt;<span>h</span>3></span>Titre moyennement important<span style="color:#1c02ff">&lt;/<span >h</span>3></span>
+                    </pre></li>
+                    <li><pre><span style="color:#1c02ff">&lt;<span>h</span>4></span>Titre moins important<span style="color:#1c02ff">&lt;/<span>h</span>4></span>
+                    </pre></li>
+                    <li><pre><span style="color:#1c02ff">&lt;<span>h</span>5></span>Titre pas vraiment important<span style="color:#1c02ff">&lt;/<span>h</span>5></span>
+                    </pre></li>
+                    <li><pre><span style="color:#1c02ff">&lt;<span>h</span>6></span>Titre pas important<span style="color:#1c02ff">&lt;/<span>h</span>6></span>
+                    </pre></li>
+                </ol>
+        </article>
+    </div>
+    <div class="flex-container3">
+        <article>
+            <h3>Sémentique</h3>
+                <ul>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>strong</span>></span><strong>texte plus gros</strong><span style="color:#1c02ff">&lt;/<span>strong</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>b</span>></span><b>texte en gras</b><span style="color:#1c02ff">&lt;/<span>b</span>></span>
+                    </pre></li>    
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>em</span>></span><em>texte mis en avant</em><span style="color:#1c02ff">&lt;/<span>em</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>i</span>></span><i>texte en italique</i><span style="color:#1c02ff">&lt;/<span>i</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>code</span>></span><code>code informatique</code><span style="color:#1c02ff">&lt;/<span>code</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>cite</span>></span><cite>citation courte</cite><span style="color:#1c02ff">&lt;/<span>cite</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>mark</span>></span><mark>texte surligné</mark><span style="color:#1c02ff">&lt;/<span>mark</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>del</span>></span><del>texte barré</del><span style="color:#1c02ff">&lt;/<span>del</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>small</span>></span><small>texte peu important</small><span style="color:#1c02ff">&lt;/<span>small</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>sup</span>></span><sup>texte en exposant</sup><span style="color:#1c02ff">&lt;/<span>sup</span>></span>
+                    </pre></li>
+                    <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>sub</span>></span><sub>texte en indice</sub><span style="color:#1c02ff">&lt;/<span>sub</span>></span>
+                    </pre></li>
+                </ul>
+        </article>
+    </div>
+    <div class="flex-container4">
+        <article>
+            <h3 id="liens-hypertexte">Liens hypertextes</h3>
+                <ul>
+                    <li>Lien externe</li>
+                        <ul>
+                            <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"URL du lien"</span><span></span>></span>Lien externe<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                            </pre></li>
+                            <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"URL du lien"</span> <span>title</span>=<span style="color:#d80800">"Voici un lien"</span>></span>Lien externe<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                            </pre></li>
+                            <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"URL du lien"</span> <span>target</span>=<span style="color:#d80800">"blank"</span>></span>Lien externe(nouvel onglet)<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                            </pre></li>
+                            <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"URL du lien"</span><span></span>></span><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>img</span> <span>src</span>=<span style="color:#d80800">"/demo.jpg"</span> <span>alt</span>=<span style="color:#d80800">"description"</span> <span>height</span>=<span style="color:#d80800">"48"</span> <span>width</span>=<span style="color:#d80800">"100"</span> /></span><pre><span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                            </pre></li>
+                            <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"tel:+33600000000"</span> <span>target</span>=<span style="color:#d80800">"_top"</span>></span>0660000000<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                            </pre></li>
+                            <li><pre style="color:#000"><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"mailto:email@example.com"</span> <span>target</span>=<span style="color:#d80800">"_top"</span>></span>Envoyer un mail<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                            </pre></li>
+                        </ul>
+                    <li>Lien interne</li>
+                        <ul>
+                            <li><pre>Ancre</pre>
+                                <ul>
+                                    <pre><li>Départ</li><pre><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"#footer"</span>></span>Aller au footer<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+                                    <pre><li>Arrivé</li><pre><span style="color:#1c02ff">&lt;<span>div</span> <span> id</span>=<span style="color:#d80800">"footer"</span>></span>
+                                </ul>
+                            </li>
+                            <li>Multimedia
+                                <ul>
+                                    <li><pre>Image</li>
+                                        <pre><span style="color:#1c02ff">&lt;<span>img</span> <span>src</span>=<span style="color:#d80800">"/demo.jpg"</span> <span>alt</span>=<span style="color:#d80800">"description"</span> <span>height</span>=<span style="color:#d80800">"48"</span> <span>width</span>=<span style="color:#d80800">"100"</span> /></span>
+                                        </pre>
+                                    <li>Video</li>
+                                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>video</span> <span>width</span>=<span style="color:#d80800">"200"</span> <span>height</span>=<span style="color:#d80800">"150"</span> <span>controls</span> autoplay<span> muted<span>></span>
+                                        <pre><span style="color:#1c02ff">&lt;<span>source</span> <span>src</span>=<span style="color:#d80800">"vid.mp4"</span> <span>type</span>=<span style="color:#d80800">"video/mp4"</span>></span>
+                                        <pre><span style="color:#1c02ff">&lt;<span>source</span> <span>src</span>=<span style="color:#d80800">"vid.ogg"</span> <span>type</span>=<span style="color:#d80800">"video/ogg"</span>></span>
+                                        <pre><span  style="color:#000000">no video support</span>
+                                        <pre><span style="color:#1c02ff">&lt;/<span>video</span>></span>
+                                        </pre></pre></pre></pre></span></span></pre>
+                                    <li>Audio</li>
+                                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>audio</span> <span>controls</span>></span>
+                                        <pre><span style="color:#1c02ff">&lt;<span>source</span> <span>src</span>=<span style="color:#d80800">"sound.ogg"</span> <span>type</span>=<span style="color:#d80800">"audio/ogg"</span>></span>
+                                        <pre><span style="color:#1c02ff">&lt;<span>source</span> <span>src</span>=<span style="color:#d80800">"sound.mp3"</span> <span>type</span>=<span style="color:#d80800">"audio/mpeg"</span>></span>
+                                        <pre>Votre navigateur ne semble pas compatible avec le lecteur audio.
+                                        <pre><span style="color:#1c02ff">&lt;/<span>audio</span>></span> 
+                                        </pre></pre></pre></pre></pre>
+                                    <li>Iframe</li>
+                                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>iframe</span> <span>src</span>=<span style="color:#d80800">"link.html"</span> <span>width</span>=<span style="color:#d80800">"200"</span> <span>height</span>=<span style="color:#d80800">"200"</span>></span>
+                                        <pre><span style="color:#1c02ff">&lt;/<span>iframe</span>></span> 
+                                        </pre></pre>
+                                    <li>Object</li>
+                                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>object</span> <span>width</span>=<span style="color:#d80800">"800"</span> <span>height</span>=<span style="color:#d80800">"600"</span>
+                                        <pre><span style="color:#1c02ff">&lt;<span>data</span>=<span style="color:#d80800">"pdf.pdf"</span> <span>type</span>=<span style="color:#d80800">"application/pdf"</span>></span>
+                                        <pre><span style="color:#1c02ff">&lt;/<span>object</span>></span>
+                                        </pre></pre></pre></pre></span></span>
+                                </ul>
+                            </li>
+                        </ul>
+                </ul>
+        </article>
+    </div>
+    <div class="flex-container5">
+    <hr />
+    <h2 id="Structure">Structure</h2>
+    <div class="flex-container5-1">
+        <article>
+            <h3>Listes</h3>
+                <ol>
+                    <li><h4>Sans hiérarchie (avec des points)</h4>
+                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>ul</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;<span>li</span>></span>Un élément<span style="color:#1c02ff">&lt;/<span>li</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;<span>li</span>></span>un autre élément<span style="color:#1c02ff">&lt;/<span>li</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;<span>li</span>></span>un autre élément<span style="color:#1c02ff">&lt;/<span>li</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;/<span>ul</span>></span>
+                        </pre>
+                    </li>
+                    <li><h4>Avec hiérarchie (avec des chiffres)</h4>
+                        <pre style="color:#000"><span style="color:#1c02ff">&lt;<span>ol</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;<span>li</span>></span>Premier élément<span style="color:#1c02ff">&lt;/<span>li</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;<span>li</span>></span>Deuxième élément<span style="color:#1c02ff">&lt;/<span>li</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;<span>li</span>></span>Troisième élément<span style="color:#1c02ff">&lt;/<span>li</span>></span>
+                        </pre>
+                        <pre><span style="color:#1c02ff">&lt;/<span>ol</span>></span>
+                        </pre>
+                    </li>
+                </ol>
+        </article>
+        <article>
+            <h3>HTML5 Page Structure</h3>
+        <div class="panelInner">
+            <h4>header, nav, main, article, section, aside, footer, address</h4>
+<pre style="color:#000"><span style="color:#1c02ff">&lt;<span>header</span>></span>
+<span style="color:#1c02ff">&lt;<span>div</span> <span>id</span>=<span style="color:#d80800">"logo"</span>></span>HTML<span style="color:#1c02ff">&lt;/<span>div</span>></span>
+<span style="color:#1c02ff">&lt;<span>nav</span>></span>  
+<span style="color:#1c02ff">&lt;<span>ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span>li</span>></span><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"/"</span>></span>Home<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+    <span style="color:#1c02ff">&lt;<span>li</span>></span><span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"/link"</span>></span>Page<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+<span style="color:#1c02ff">&lt;/<span>ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span>nav</span>></span>
+<span style="color:#1c02ff">&lt;/<span>header</span>></span>
+<span style="color:#1c02ff">&lt;<span>main</span> <span>role</span>=<span style="color:#d80800">"main"</span>></span>
+<span style="color:#1c02ff">&lt;<span>article</span>></span>
+<span style="color:#1c02ff">&lt;<span>h2</span>></span>Titre 1<span style="color:#1c02ff">&lt;/<span>h2</span>></span>
+<span style="color:#1c02ff">&lt;<span>p</span>></span>Content 1<span style="color:#1c02ff">&lt;/<span>p</span>></span>
+<span style="color:#1c02ff">&lt;/<span>article</span>></span>
+<span style="color:#1c02ff">&lt;<span>article</span>></span>
+<span style="color:#1c02ff">&lt;<span>h2</span>></span>Titre 2<span style="color:#1c02ff">&lt;/<span>h2</span>></span>
+<span style="color:#1c02ff">&lt;<span>p</span>></span>Content 2<span style="color:#1c02ff">&lt;/<span>p</span>></span>
+<span style="color:#1c02ff">&lt;/<span>article</span>></span>
+<span style="color:#1c02ff">&lt;/<span>main</span>></span>
+<span style="color:#1c02ff">&lt;<span>section</span>></span>
+Un groupe de contenu connexe
+<span style="color:#1c02ff">&lt;/<span>section</span>></span>
+<span style="color:#1c02ff">&lt;<span>aside</span>></span>
+Sidebar
+<span style="color:#1c02ff">&lt;/<span>aside</span>></span>
+<span style="color:#1c02ff">&lt;<span>footer</span>></span>
+<span style="color:#1c02ff">&lt;<span>p</span>></span><span style="color:#c5060b;font-style:italic">&amp;copy;</span> HTML CheatSheet<span style="color:#1c02ff">&lt;/<span>p</span>></span>
+<span style="color:#1c02ff">&lt;<span>address</span>></span>
+Contact <span style="color:#1c02ff">&lt;<span>a</span> <span>href</span>=<span style="color:#d80800">"mailto:me@htmlg.com"</span>></span>me<span style="color:#1c02ff">&lt;/<span>a</span>></span>
+<span style="color:#1c02ff">&lt;/<span>address</span>></span>
+<span style="color:#1c02ff">&lt;/<span>footer</span>></span>
+</pre>
+</div>
+        </article>
+    </div>
+    <div class="flex-container5-2">
+        <article>
+            <h3 id="Balises-sementiques">Balises Sémentiques</h3>
+                <img src="../Pages/Balises_sementiques.JPG" alt="Schéma" height="300" width="450" />
+        </article>
+        <article>
+            <h3>Tableau </h3>
+<pre style="color:#000"><span style="color:#1c02ff">&lt;<span>table</span>></span><span style="color:#1c02ff">&lt;<span>caption</span>></span>Phone numbers<span style="color:#1c02ff">&lt;/<span>caption</span>></span>
+<span style="color:#1c02ff">&lt;<span>thead</span>></span>
+<span style="color:#1c02ff">&lt;<span>tr</span>></span>
+	<span style="color:#1c02ff">&lt;<span>th</span>></span>Name<span style="color:#1c02ff">&lt;/<span>th</span>></span>
+	<span style="color:#1c02ff">&lt;<span>th</span> <span style="font-style:italic">colspan</span>=<span style="color:#d80800">"2"</span>></span>Phone<span style="color:#1c02ff">&lt;/<span>th</span>></span>
+<span style="color:#1c02ff">&lt;/<span>tr</span>></span>
+<span style="color:#1c02ff">&lt;/<span>thead</span>></span>
+<span style="color:#1c02ff">&lt;<span>tbody</span>></span>
+<span style="color:#1c02ff">&lt;<span>tr</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>John<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>577854<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>577855<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+<span style="color:#1c02ff">&lt;/<span>tr</span>></span>
+<span style="color:#1c02ff">&lt;<span>tr</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>Jack<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>577856<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>577857<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+<span style="color:#1c02ff">&lt;/<span>tr</span>></span>
+<span style="color:#1c02ff">&lt;/<span>tbody</span>></span>
+<span style="color:#1c02ff">&lt;<span>tfoot</span>></span>
+<span style="color:#1c02ff">&lt;<span>tr</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span><span style="color:#c5060b;font-style:italic">&amp;nbsp;</span><span style="color:#1c02ff">&lt;/<span>td</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>Personal<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+	<span style="color:#1c02ff">&lt;<span>td</span>></span>Office<span style="color:#1c02ff">&lt;/<span>td</span>></span>
+<span style="color:#1c02ff">&lt;/<span>tr</span>></span>
+<span style="color:#1c02ff">&lt;/<span>tfoot</span>></span>
+<span style="color:#1c02ff">&lt;/<span>table</span>></span>
+</pre>
+        </article>
+    </div>
+    <div class="flex-container5-1">
+    <article>
+        <h2>Formulaire</h2>
+<pre><span style="color: green;">&lt;form <span style="color: blue;">accept-charset=</span><span style="color:red">"UTF-8"</span><span style="color: blue"> action=</span><span style="color:red">"action_page.php"</span><span style="color:blue"> autocomplete=<span style="color:red">"off"</span> method=</span><span style="color:red">"GET" <span style="color: blue">target=</span>"_blank"</span>></span>
+    <span style="color:green">&lt;<span>fieldset</span>></span>
+    <span style="color:green">&lt;<span>legend</span>></span>Titre:<span style="color: green">&lt;/legend></span>
+    <span style="color: green">&lt;label<span style="color:blue"> for=<span style="color: red">"name"</span></span>></span>Name<span style="color: green">&lt;/label></span><span style="color:green">&lt;<span>br</span> /></span>
+    <span style="color: green">&lt;input<span style="color:blue"> name=<span style="color: red">"name"</span></span><span style="color: blue"> type=<span style="color: red">"text"</span> placeholder=<span style="color:red">"Stef"</span> required</span> /> &lt;<span>br</span> /></span>
+    <span style="color: green">&lt;input<span style="color:blue"> checked=<span style="color: red">"checked"</span></span><span style="color: blue"> name=<span style="color: red">"sex"</span><span style="color: blue"> type=<span style="color: red">"radio"</span> value=<span style="color:red">"male"</span></span></span> /></span> Male<span style="color: green"> &lt;<span>br</span> /></span>
+    <span style="color: green">&lt;input<span style="color:blue"> name=<span style="color: red">"sex"</span><span style="color: blue"> type=<span style="color: red">"radio"</span> value=<span style="color:red">"female"</span></span></span> /></span> Female<span style="color: green"> &lt;<span>br</span> /></span>
+    <span style="color: green">&lt;textarea <span style="color: blue">cols=<span style="color: red">"30"</span> rows=<span style="color: red">"2"</span></span>></span>long text.<span style="color: green">&lt;/textarea><span>&lt;br /></span></span>
+    <span style="color: green">&lt;select></span>
+        <span style="color: green">&lt;option <span style="color: blue">selected=<span style="color: red">"selected"</span> value=<span style="color: red">"1"</span></span>></span>Yes<span style="color: green">&lt;/option></span>
+        <span style="color: green">&lt;option <span style="color: blue">value=<span style="color: red">"2"</span></span>></span>No<span style="color: green">&lt;/option></span>
+    <span style="color: green">&lt;/select>&lt;br /></span>
+    <span style="color: green">&lt;input <span style="color: blue">type=<span style="color: red">"file"</span> id=<span style="color: red">"monFichier"</span> name=<span style="color: red">"monFichier"</span> accept=<span style="color: red">"image/png, image/jpeg"</span></span>>&lt;br /></span>
+    <span style="color:green">&lt;input <span style="color: blue">name=<span style="color: red">"democheckbox"</span> type=<span style="color: red">"checkbox"</span> value=<span style="color: red">"1"</span></span> /></span> Checkbox<span style="color: green">&lt;br /></span> 
+    <span style="color: green">&lt;button <span style="color: blue">type=<span style="color: red">"submit"</span> value=<span style="color: red">"Submit"</span></span>></span>Submit<span style="color: green">&lt;/button></span>
+    <span style="color:green">&lt;/<span>fieldset</span>></span>
+<span style="color:green">&lt;/<span>form</span>></span>
+</pre>
+            <h3>Exemple</h3>
+                <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+                    <fieldset>
+                    <legend>Titre:</legend>
+                    <label for="name">Nom</label><br /> 
+                    <input name="name" type="text" placeholder="Stef" required/> <br /> 
+                    <input checked="checked" name="sex" type="radio" value="male" /> Male <br /> 
+                    <input name="sex" type="radio" value="female" /> Female <br />  
+                    <textarea cols="30" rows="2">Long text.</textarea><br /> 
+                    <select>
+                        <option selected="selected" value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select><br />
+                    <input type="file" id="monFichier" name="monFichier" accept="image/png, image/jpeg"><br /> 
+                    <input name="democheckbox" type="checkbox" value="1" /> Checkbox<br /> 
+                    <button type="submit" value="Submit">Submit</button>
+                    </fieldset>
+                </form>  
+    </article>
+    </div>
+    <hr />
+    <div class="flex-container">
+    <h2 id="Attributs">Attributs</h2>
+        <article>
+            <h3>Tous les attributs</h3>
+            <div class="descriptionListing">
+                <div><span title="Liste des types acceptés par le serveur, généralement un type de fichier.">accept</span><em>form, input</em></div>
+                <div><span title="Liste des jeux de caractères pris en charge.">accept-charset</span><em>form</em></div>
+                <div><span title="Définit un raccourci clavier pour activer ou ajouter le focus à l'élément.">accesskey</span><em>Global attribute</em></div>
+                <div><span title="L'URI d'un programme qui traite les informations soumises via le formulaire.">action</span><em>form</em></div>
+                <div><span title="Spécifie l'alignement horizontal de l'élément.">align</span><em>applet, caption, col, colgroup, hr, iframe, img, table, tbody, td, tfoot , th, thead, tr</em></div>
+                <div><span title="Texte alternatif au cas où une image ne peut pas être affichée.">alt</span><em>applet, area, img, input</em></div>
+                <div><span title="Indique que le script doit être exécuté de manière asynchrone.">async</span><em>script</em></div>
+                <div><span title="Indique si les champs de ce formulaire peuvent par défaut voir leurs valeurs complétées automatiquement par le navigateur.">autocomplete</span><em>form, input</em></div>
+                <div><span title="L'élément doit être automatiquement mis au point après le chargement de la page.">autofocus</span><em>button, input, keygen, select, textarea</em></div>
+                <div><span title="L'audio ou la vidéo devrait jouer dès que possible.">autoplay</span><em>audio, video</em></div>
+                <div><span title="Les valeurs précédentes doivent conserver des listes déroulantes de valeurs sélectionnables à travers les chargements de page.">autosave</span><em>input</em></div>
+                <div><span title="">bgcolor</span><em>body, col, colgroup, marquee, table, tbody, tfoot, td, th, tr</em></div>
+                <div><span title="Contient la plage horaire des médias déjà mis en mémoire tampon.">buffered</span><em>audio, video</em></div>
+                <div><span title="Une chaîne de défi soumise avec la clé publique.">challenge</span><em>keygen</em></div>
+                <div><span title="Déclare l'encodage des caractères de la page ou du script.">charset</span><em>meta, script</em></div>
+                <div><span title="Indique si l'élément doit être vérifié au chargement de la page.">checked</span><em>command, input</em></div>
+                <div><span title="Contient un URI qui pointe vers la source de la citation ou de la modification.">cite</span><em>blockquote, del, ins, q</em></div>
+                <div><span title="Souvent utilisé avec CSS pour styliser des éléments avec des propriétés communes.">class</span><em>Global attribute</em></div>
+                <div><span title="Spécifie l'URL du fichier de classe de l'applet à charger et à exécuter.">code</span><em>applet</em></div>
+                <div><span title="Donne l'URL absolue ou relative du répertoire où sont stockés les fichiers .class des applets référencés par l'attribut code.">codebase</span><em>applet</em></div>
+                <div><span title="Cet attribut définit la couleur du texte à l'aide d'une couleur nommée ou d'une couleur spécifiée au format hexadécimal. Remarque : Il s'agit d'un attribut hérité, utilisez plutôt la propriété de couleur CSS.">color</span><em>basefont, font, hr</em></div>
+                <div><span title="Définit le nombre de colonnes dans une zone de texte.">cols</span><em>textarea</em></div>
+                <div><span title="L'attribut colspan définit le nombre de colonnes qu'une cellule doit couvrir.">colspan</span><em>td, th</em></div>
+                <div><span title="Une valeur associée à http-equiv ou name selon le contexte.">content</span><em>meta</em></div>
+                <div><span title="Indique si le contenu de l'élément est modifiable.">contenteditable</span><em>Global attribute</em></div>
+                <div><span title="Définit l'ID d'un &lt;menu&gt; élément qui servira de menu contextuel de l'élément.">contextmenu</span><em>Global attribute</em></div>
+                <div><span title="Indique si le navigateur doit afficher les commandes de lecture à l'utilisateur.">controls</span><em>audio, video</em></div>
+                <div><span title="Un ensemble de valeurs spécifiant les coordonnées de la région du point chaud.">coords</span><em>area</em></div>
+                <div><span title="Spécifie l'URL de la ressource.">data</span><em>object</em></div>
+                <div><span title="Vous permet d'attacher des attributs personnalisés à un élément HTML.">data-*</span><em>Global attribute</em></div>
+                <div><span title="Indique la date et l'heure associées à l'élément.">datetime</span><em>del, ins, time</em></div>
+                <div><span title="Indique que la piste doit être activée à moins que les préférences de l'utilisateur n'indiquent quelque chose de différent.">default</span><em>track</em></div>
+                <div><span title="Indique que le script doit être exécuté après l'analyse de la page.">defer</span><em>script</em></div>
+                <div><span title="Définit la direction du texte. Les valeurs autorisées sont ltr (Left-To-Right) ou rtl (Right-To-Left)">dir</span><em>Global attribute</em></div>
+                <div><span title="Un formulaire HTML où la direction du texte des champs sera soumise">dirname</span><em>input, textarea</em></div>
+                <div><span title="Indique si l'utilisateur peut interagir avec l'élément.">disabled</span><em>button, command, fieldset, input, keygen, optgroup, option, select, textarea</em></div>
+                <div><span title="Indique que le lien hypertexte doit être utilisé pour télécharger une ressource.">download</span><em>a, area</em></div>
+                <div><span title="Définit si l'élément peut être déplacé.">draggable</span><em>Global attribute</em></div>
+                <div><span title="Indique que l'élément accepte le dépôt de contenu sur celui-ci.">dropzone</span><em>Global attribute</em></div>
+                <div><span title="Définit le type de contenu de la date du formulaire lorsque la méthode est POST.">enctype</span><em>form</em></div>
+                <div><span title="Describes elements which belongs to this one.">for</span><em>label, output</em></div>
+                <div><span title="Indique le formulaire propriétaire de l'élément.">form</span><em>button, fieldset, input, keygen, label, meter, object, output, progress, select, textarea</em></div>
+                <div><span title="Indique l'action de l'élément, remplaçant l'action définie dans le &lt;formulaire&gt;.">formaction</span><em>input, button</em></div>
+                <div><span title="ID du &lt;e&gt; éléments qui s'appliquent à cet élément.">headers</span><em>td, th</em></div>
+                <div><span title="Spécifie la hauteur des éléments répertoriés ici. Pour tous les autres éléments, utilisez la propriété CSS height. Remarque : dans certains cas, comme DIV, il s'agit d'un attribut hérité, auquel cas la propriété CSS height doit être utilisée à la place.">height</span><em>canvas, embed, iframe, img, input, object, video</em></div>
+                <div><span title="Empêche le rendu d'un élément donné, tout en conservant les éléments enfants, par ex. éléments de script, actifs.">hidden</span><em>Global attribute</em></div>
+                <div><span title="Indique la limite inférieure de la plage supérieure.">high</span><em>meter</em></div>
+                <div><span title="L'URL d'une ressource liée.">href</span><em>a, area, base, link</em></div>
+                <div><span title="Spécifie la langue de la ressource liée.">hreflang</span><em>a, area, link</em></div>
+                <div><span title="Fournit un en-tête HTTP pour les informations/valeurs de l'attribut de contenu.">http-equiv</span><em>meta</em></div>
+                <div><span title="Spécifie une image qui représente la commande.">icon</span><em>command</em></div>
+                <div><span title="Souvent utilisé avec CSS pour styliser un élément spécifique. La valeur de cet attribut doit être unique.">id</span><em>Global attribute</em></div>
+                <div><span title="">integrity</span><em>link, script</em></div>
+                <div><span title="Indique que l'image fait partie d'une image cliquable côté serveur.">ismap</span><em>img</em></div>
+                <div><span title="Ajouter des propriétés à un élément">itemprop</span><em>Global attribute</em></div>
+                <div><span title="Spécifie le type de clé générée.">keytype</span><em>keygen</em></div>
+                <div><span title="Spécifie le type de piste de texte.">kind</span><em>track</em></div>
+                <div><span title="Spécifie un titre lisible par l'utilisateur de la piste de texte.">label</span><em>track</em></div>
+                <div><span title="Définit la langue utilisée dans l'élément.">lang</span><em>Global attribute</em></div>
+                <div><span title="Définit le langage de script utilisé dans l'élément.">language</span><em>script</em></div>
+                <div><span title="Identifie une liste d'options prédéfinies à proposer à l'utilisateur.">list</span><em>input</em></div>
+                <div><span title="Indique si le média doit commencer à jouer depuis le début lorsqu'il est terminé.">loop</span><em>audio, bgsound, marquee, video</em></div>
+                <div><span title="Indique la limite supérieure de la plage inférieure.">low</span><em>meter</em></div>
+                <div><span title="Spécifie l'URL du manifeste de cache du document.">manifest</span><em>html</em></div>
+                <div><span title="Indique la valeur maximale autorisée.">max</span><em>input, meter, progress</em></div>
+                <div><span title="Définit le nombre maximum de caractères autorisés dans l'élément.">maxlength</span><em>input, textarea</em></div>
+                <div><span title="Spécifie un indice du média pour lequel la ressource liée a été conçue.">media</span><em>a, area, link, source, style</em></div>
+                <div><span title="Définit la méthode HTTP à utiliser lors de la soumission du formulaire. Peut être GET (par défaut) ou POST.">method</span><em>form</em></div>
+                <div><span title="Indique la valeur minimale autorisée.">min</span><em>input, meter</em></div>
+                <div><span title="Indique si plusieurs valeurs peuvent être saisies dans une entrée de type email ou fichier.">multiple</span><em>input, select</em></div>
+                <div><span title="Indique si le son sera initialement coupé au chargement de la page.">muted</span><em>video</em></div>
+                <div><span title="Nom de l'élément. Par exemple utilisé par le serveur pour identifier les champs dans les soumissions de formulaire.">name</span><em>button, form, fieldset, iframe, input, keygen, object, output, select, textarea, map, meta, param</em></div>
+                <div><span title="Cet attribut indique que le formulaire ne doit pas être validé lors de sa soumission.">novalidate</span><em>form</em></div>
+                <div><span title="Indique si les détails seront affichés au chargement de la page.">open</span><em>details</em></div>
+                <div><span title="Indique la valeur numérique optimale.">optimum</span><em>meter</em></div>
+                <div><span title="Définit une expression régulière par rapport à laquelle la valeur de l'élément sera validée.">pattern</span><em>input</em></div>
+                <div><span title="Lien notifier le suivi.">ping</span><em>a, area</em></div>
+                <div><span title="Fournit une indication à l'utilisateur de ce qui peut être saisi dans le champ.">placeholder</span><em>input, textarea</em></div>
+                <div><span title="Une URL indiquant une image d'affiche à afficher jusqu'à ce que l'utilisateur joue ou recherche.">poster</span><em>video</em></div>
+                <div><span title="Indique si la ressource entière, des parties de celle-ci ou rien doit être préchargé.">preload</span><em>audio, video</em></div>
+                <div><span title="Un élément de commande qui appartient à un groupe radio.">radiogroup</span><em>command</em></div>
+                <div><span title="Indique si l'élément peut être modifié.">readonly</span><em>input, textarea</em></div>
+                <div><span title="Spécifie la relation entre l'objet cible et l'objet lien.">rel</span><em>a, area, link</em></div>
+                <div><span title="Indique si cet élément est à renseigner ou non.">required</span><em>input, select, textarea</em></div>
+                <div><span title="Indique si la liste doit être affichée dans un ordre décroissant au lieu d'un ordre croissant.">reversed</span><em>ol</em></div>
+                <div><span title="Définit le nombre de lignes dans une zone de texte.">rows</span><em>textarea</em></div>
+                <div><span title="Définit le nombre de lignes sur lesquelles une cellule de tableau doit s'étendre.">rowspan</span><em>td, th</em></div>
+                <div><span title="Une iframe avec une restriction supplémentaire.">sandbox</span><em>iframe</em></div>
+                <div><span title="Définit une valeur qui sera sélectionnée au chargement de la page.">selected</span><em>option</em></div>
+                <div><span title="Définit la largeur de l'élément (en pixels). Si l'attribut type de l'élément est text ou password alors c'est le nombre de caractères.">size</span><em>input, select</em></div>
+                <div><span title="Attribue un emplacement dans un arbre fantôme du DOM fantôme à un élément.">slot</span><em>Global attribute</em></div>
+                <div><span title="">span</span><em>col, colgroup</em></div>
+                <div><span title="Indique si la vérification orthographique est autorisée pour l'élément.">spellcheck</span><em>Global attribute</em></div>
+                <div><span title="L'URL du contenu intégrable.">src</span><em>audio, embed, iframe, img, input, script, source, track, video</em></div>
+                <div><span title="Définit le premier nombre si différent de 1.">start</span><em>ol</em></div>
+                <div><span title="Un formulaire HTML avec un champ de saisie avec des intervalles de nombres légaux spécifiés">step</span><em>input</em></div>
+                <div><span title="Définit les styles CSS qui remplaceront les styles précédemment définis.">style</span><em>Global attribute</em></div>
+                <div><span title="Remplace l'ordre de tabulation par défaut du navigateur et suit celui spécifié à la place.">tabindex</span><em>Global attribute</em></div>
+                <div><span title="Indique où ouvrir le document lié.">target</span><em>a, area, base, form</em></div>
+                <div><span title="Texte à afficher dans une info-bulle lors du survol de l'élément.">title</span><em>Global attribute</em></div>
+                <div><span title="Définit le type de l'élément.">type</span><em>button, input, command, embed, object, script, source, style, menu</em></div>
+                <div><span title="Une image-map, avec des zones cliquables.">usemap</span><em>img, input, object</em></div>
+                <div><span title="Définit une valeur par défaut qui sera affichée dans l'élément au chargement de la page.">value</span><em>button, option, input, li, meter, progress, param</em></div>
+                <div><span title="Pour les éléments répertoriés ici, cela établit la largeur de l'élément. Remarque : pour toutes les autres instances, telles que DIV, il s'agit d'un attribut hérité, auquel cas la propriété CSS width doit être utilisée à la place..">width</span><em>canvas, embed, iframe, img, input, object, video</em></div>
+                <div><span title="Indique si le texte doit être enveloppé.">wrap</span><em>textarea</em></div>
+            </div>
+        </article>
+    </div>   
+</main>
+<footer>
+    <p>copyright by Stef</p>
+    <a href="#haut-de-page">&#8593;</a>
+</footer>
+</body>
+</html>
